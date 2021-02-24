@@ -2,17 +2,18 @@
 
 <head>
     <script src="https://kit.fontawesome.com/3657f037a5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./basic input.css">
-    <link rel="stylesheet" type="text/css" href="./Basic inout (media query).css">
+    <link rel="stylesheet" type="text/css" href="./Basic Inputs.css">
+    <link rel="stylesheet" type="text/css" href="./Basic Inputs(media query).css">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta charset="UTF-8">
     <title>Basic input</title>
-   
+
 </head>
 
 <body>
     <div class="side-navigation">
         <a class="side-navigation__brand" href="#">AdminKit</a>
+
         <ul class="side-navigation__contant">
             <li class="side-navigation__header">
                 Pages
@@ -55,7 +56,12 @@
             </li>
             <li class="side-navigation__item">
                 <span class="side-navigation__item__contant">
-                    <i class="far fa-user"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-user align-middle">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
                     profile
                 </span>
             </li>
@@ -98,7 +104,14 @@
 
             <li class="side-navigation__item">
                 <span class="side-navigation__item__contant">
-                    <i class="fas fa-user-friends"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-users align-middle">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
                     auth
                 </span>
                 <span class="side-navigation__item__icon">
@@ -281,13 +294,14 @@
         </div>
     </div>
 
-    <div class="navbar">
+    <!-- <nav class="navbar">
         <div class="navbar-search">
             <span class="navbar-search__icon">
                 <i class="fas fa-bars"></i>
             </span>
             <form class="navbar-search__form">
-
+                <input class="navbar-search__form__input" placeholder="Search...." type="textS">
+                <span class="navbar-search__form__button"><i class="fas fa-search"></i></span>
             </form>
         </div>
 
@@ -312,8 +326,186 @@
                 <i class="fas fa-chevron-down"></i>
             </span>
         </div>
-        
-    </div>
+
+    </nav> -->
+
+    <!-- <main class="main">
+
+        <h3 class="main-header">Basic Inputs</h3>
+        <div class="main-contant">
+            <div class="main-input">
+                <p class="main__header">Input</p>
+                <input placeholder="Input" type="text">
+            </div>
+
+            <div class="main-textarea">
+                <p class="main-textarea__header">Textarea</p>
+                <textarea cols="50" rows="3"></textarea>
+            </div>
+
+            <div class="main-Checkboxes">
+                <p class="main__header">Checkboxes</p>
+                <div class="checkboxe">
+                    <input type="checkbox" id="maincheckbox">
+                    <label for="maincheckbox">Option one is this and that—be sure to include why it's great</label>
+                </div>
+                <div class="checkboxe checkbox--disable">
+                    <input type="checkbox" id="maincheckbox">
+                    <label for="maincheckbox">Option two is disabled</label>
+                </div>
+                <div class="checkboxe checkbox--numbers">
+                    <span class="checkbox--number">
+                        <input type="checkbox" id="maincheckbox">
+                        <label for="maincheckbox">1</label>
+                    </span>
+                    <span class="checkbox--number">
+                        <input type="checkbox" id="maincheckbox">
+                        <label for="maincheckbox">2</label>
+                    </span>
+                    <span class="checkbox--number checkbox--disable">
+                        <input type="checkbox" id="maincheckbox">
+                        <label for="maincheckbox">3</label>
+                    </span>
+                </div>
+            </div>
+
+            <div class="main-size">
+                <p class="main__header">Checkboxes</p>
+                <div class="main-size__box">
+                    <input type="text" placeholder="large input" class="size__large">
+                </div>
+                <div class="main-size__box">
+                    <input type="text" placeholder="Medium input" class="size__medium">
+                </div>
+                <div class="main-size__box">
+                    <input type="text" placeholder="Small input" class="size__small">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-contant">
+            <div class="main-radio">
+                <p class="main__header">radios</p>
+                <div class="main-radio__box">
+                    <input type="radio" id="radio button" class="radio-button">
+                    <label for="radio button">Option one is this and that—be sure to include why it's great</label>
+                </div>
+
+                <div class="main-radio__box">
+                    <input type="radio" id="radio button" class="radio-button">
+                    <label for="radio button">Option two can be something else and selecting it will deselect option
+                        one</label>
+                </div>
+
+                <div class="main-radio__box">
+                    <input type="radio" id="radio button" class="radio-button disable">
+                    <label for="radio button">Option three is disabled</label>
+                </div>
+
+                <div class="main-radio__box">
+                    <span class="main-radio__box__item"> <input type="radio" id="radio button"
+                            class="radio-button disable">
+                        <label for="radio button">1</label>
+                    </span>
+                    <span class="main-radio__box__item"> <input type="radio" id="radio button"
+                            class="radio-button disable">
+                        <label for="radio button">2</label>
+                    </span>
+                    <span class="main-radio__box__item"> <input type="radio" id="radio button"
+                            class="radio-button disable">
+                        <label for="radio button">3</label>
+                    </span>
+                </div>
+            </div>
+
+            <div class="main-switches">
+                <p class="main__header">switches</p>
+
+                <div class="switch-box">
+                    <label class="switch">
+                        <input type="checkbox" class="switch__input" checked>
+                        <span class="switch__slider switch__round"></span>
+                    </label>
+                    <span class="switch__paragraph">Default switch checkbox input</span>
+                </div>
+
+                <div class="switch-box">
+                    <label class="switch">
+                        <input type="checkbox" class="switch__input" checked>
+                        <span class="switch__slider switch__round"></span>
+                    </label>
+                    <span class="switch__paragraph">Checked switch checkbox input</span>
+                </div>
+
+                <div class="switch-box">
+                    <label class="switch">
+                        <input type="checkbox" class="switch__input" checked>
+                        <span class="switch__slider switch__round"></span>
+                    </label>
+                    <span class="switch__paragraph">Disabled switch checkbox input</span>
+                </div>
+
+                <div class="switch-box">
+                    <label class="switch">
+                        <input type="checkbox" class="switch__input" checked>
+                        <span class="switch__slider switch__round"></span>
+                    </label>
+                    <span class="switch__paragraph">Disabled checked switch checkbox input</span>
+                </div>
+            </div>
+
+            <div class="main-Selects">
+                <p class="main__header">Selects</p>
+
+                <div class="selects-tag">
+                    <select>
+                        <option value="Open this select menu">Open this select menu</option>
+                        <option value="one">one</option>
+                        <option value="two">two</option>
+                        <option value="three">three</option>
+                    </select>
+                </div>
+                <ul class="select-list">
+                    <li>Open this select menu</li>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>three</li>
+                </ul>
+            </div>
+
+            <div class="main-disable">
+                <p class="main__header">Disabled</p>
+                 
+                <form class="form-disable form-disable__text">
+                    <label for="disablepart">Disabled input</label>
+                    <input id="disablepart" type="text" placeholder="Disabled input" disabled>
+                </form>
+
+                <form class="form-disable ">
+                    <label for="disablepart">Disabled select menu</label>
+                    <select class="form-disable__select" id="disablepart" class="form-disable__select" disabled>
+                        <option value="Disabled select" >Disabled select</option>
+                        
+                        <label for="disablecheckbox" value="checkbox" disabled>
+                            <input type="checkbox" id="disablecheckbox"  value="checkbox" disabled>
+                              <span >Can't check this</span>
+                        </label>
+                    </select>
+                </form>
+            </div>
+
+            <div class="main-readonly">
+                <p class="main__header">readonly</p>
+                <form class="readonly__form">
+                    <input class="input-control" type="text" placeholder="Readonly input" value="Readonly input" readonly>
+                </form>
+                
+            </div>
+
+        </div>
+
+    </main> -->
 </body>
 
 </html>
