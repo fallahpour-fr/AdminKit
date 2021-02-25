@@ -357,32 +357,57 @@
 
                             <div class="main-textarea main-box">
                                 <p class="main__header">Textarea</p>
-                                <textarea class="main-box__writespace  main-textarea"  cols="50" rows="3" placeholder="Textarea"></textarea>
+                                <textarea class="main-box__writespace  main-textarea" cols="50" rows="3"
+                                    placeholder="Textarea"></textarea>
                             </div>
 
                             <div class="main-Checkboxes main-box">
                                 <p class="main__header">Checkboxes</p>
+
                                 <div class="checkboxe">
-                                    <input type="checkbox" id="maincheckbox">
-                                    <label for="maincheckbox">Option one is this and that—be sure to include why it's
-                                        great</label>
+                                    <label for="maincheckbox1" class="checkboxe-number__label">
+                                        <input class="checkbox-number__box--input" type="checkbox" id="maincheckbox1">
+                                        <span class="checkbox-number__box--slider"></span>
+                                    </label>
+                                    <span class="checkboxe-number__titlle">Option one is this and that—be sure to
+                                        include why it's
+                                        great</span>
                                 </div>
-                                <div class="checkboxe checkbox--disable">
-                                    <input type="checkbox" id="maincheckbox">
-                                    <label for="maincheckbox">Option two is disabled</label>
+
+                                <div class="checkboxe ">
+                                    <label for="maincheckbox" class="checkboxe-number__label">
+                                        <input type="checkbox" id="maincheckbox" disabled>
+                                    </label>
+                                    <span class="disable">Option two is disabled</span>
                                 </div>
-                                <div class="checkboxe checkbox--numbers">
-                                    <span class="checkbox--number">
-                                        <input type="checkbox" id="maincheckbox">
-                                        <label for="maincheckbox">1</label>
+
+                                <div class="checkboxe">
+
+                                    <span class="checkboxe-number">
+                                        <label for="maincheckbox2" class="checkboxe-number__label">
+                                            <input class="checkbox-number__box--input" type="checkbox"
+                                                id="maincheckbox2">
+                                            <span class="checkbox-number__box--slider"></span>
+                                        </label>
+                                        <span class="checkboxe-number__titlle">1</span>
                                     </span>
-                                    <span class="checkbox--number">
-                                        <input type="checkbox" id="maincheckbox">
-                                        <label for="maincheckbox">2</label>
+
+                                    <span class="checkboxe-number">
+                                        <label for="maincheckbox3" class="checkboxe-number__label">
+                                            <input class="checkbox-number__box--input" type="checkbox"
+                                                id="maincheckbox3">
+                                            <span class="checkbox-number__box--slider"></span>
+                                        </label>
+                                        <span class="checkboxe-number__titlle">2</span>
                                     </span>
-                                    <span class="checkbox--number checkbox--disable">
-                                        <input type="checkbox" id="maincheckbox">
-                                        <label for="maincheckbox">3</label>
+
+                                    <span class="checkboxe-number">
+                                        <label for="maincheckbox4" class="checkboxe-number__label">
+                                            <input class="checkbox-number__box--input" type="checkbox"
+                                                id="maincheckbox4">
+                                            <span class="checkbox-number__box--slider"></span>
+                                        </label>
+                                        <span class="checkboxe-number__titlle">3</span>
                                     </span>
                                 </div>
                             </div>
@@ -390,13 +415,16 @@
                             <div class="main-size main-box">
                                 <p class="main__header">size</p>
                                 <div class="main-size__box">
-                                    <input type="text" placeholder="large input" class="main-box__writespace size__large">
+                                    <input type="text" placeholder="large input"
+                                        class="main-box__writespace size__large margin-bottom">
                                 </div>
                                 <div class="main-size__box">
-                                    <input type="text" placeholder="Medium input" class="main-box__writespace size__medium">
+                                    <input type="text" placeholder="Medium input"
+                                        class="main-box__writespace size__medium margin-bottom">
                                 </div>
                                 <div class="main-size__box">
-                                    <input type="text" placeholder="Small input" class="main-box__writespace size__small">
+                                    <input type="text" placeholder="Small input"
+                                        class="main-box__writespace size__small">
                                 </div>
                             </div>
                         </div>
@@ -405,37 +433,62 @@
                         <div class="main-contant ">
                             <div class="main-radio main-box">
                                 <p class="main__header">radios</p>
-                                <div class="main-radio__box">
-                                    <input type="radio" id="radio button" class="radio-button">
-                                    <label for="radio button">Option one is this and that—be sure to include why it's
-                                        great</label>
+
+                                <div class="checkboxe">
+                                    <label for="maincheckboxradio0" class="checkboxe-number__label">
+                                        <input class="checkbox-number__box--input" type="radio" name="radio" id="maincheckboxradio0" >
+                                        <span class="checkbox-number__box--radio"></span>
+                                    </label>
+                                    <span class="checkboxe-number__titlle">Option one is this and that—be sure to include why it's
+                                        great</span>
                                 </div>
 
-                                <div class="main-radio__box">
-                                    <input type="radio" id="radio button" class="radio-button">
-                                    <label for="radio button">Option two can be something else and selecting it will
+                                <div class="checkboxe">
+                                    <label for="maincheckboxradio1" class="checkboxe-number__label">
+                                        <input class="checkbox-number__box--input" type="radio" name="radio" id="maincheckboxradio1" >
+                                        <span class="checkbox-number__box--radio"></span>
+                                    </label>
+                                    <span class="checkboxe-number__titlle">Option two can be something else and selecting it will
                                         deselect
                                         option
-                                        one</label>
+                                        one</span>
+                                </div>
+
+                                <div class="checkboxe">
+                                    <label for="maincheckboxradiosiable" class="checkboxe-number__label">
+                                        <input class="checkbox-number__box--input" type="radio" name="radio" id="maincheckboxradiosiable" disabled>
+                                        <span class="checkbox-number__box--radio"></span>
+                                    </label>
+                                    <span class="checkboxe-number__titlle disable">Option three is disabled</span>
                                 </div>
 
                                 <div class="main-radio__box">
-                                    <input type="radio" id="radio button" class="radio-button disable">
-                                    <label for="radio button">Option three is disabled</label>
-                                </div>
+                            
+                                    <span class="checkboxe-number">
+                                        <label for="maincheckboxradio2" class="checkboxe-number__label">
+                                            <input class="checkbox-number__box--input" type="radio" name="radio"
+                                                id="maincheckboxradio2">
+                                            <span class="checkbox-number__box--radio"></span>
+                                        </label>
+                                        <span class="checkboxe-number__titlle">1</span>
+                                    </span>
 
-                                <div class="main-radio__box">
-                                    <span class="main-radio__box__item"> <input type="radio" id="radio button"
-                                            class="radio-button disable">
-                                        <label for="radio button">1</label>
+                                    <span class="checkboxe-number">
+                                        <label for="maincheckboxradio3" class="checkboxe-number__label">
+                                            <input class="checkbox-number__box--input" type="radio" name="radio"
+                                                id="maincheckboxradio3">
+                                            <span class="checkbox-number__box--radio"></span>
+                                        </label>
+                                        <span class="checkboxe-number__titlle">2</span>
                                     </span>
-                                    <span class="main-radio__box__item"> <input type="radio" id="radio button"
-                                            class="radio-button disable">
-                                        <label for="radio button">2</label>
-                                    </span>
-                                    <span class="main-radio__box__item"> <input type="radio" id="radio button"
-                                            class="radio-button disable">
-                                        <label for="radio button">3</label>
+
+                                    <span class="checkboxe-number">
+                                        <label for="maincheckboxradio4" class="checkboxe-number__label">
+                                            <input class="checkbox-number__box--input" type="radio" name="radio"
+                                                id="maincheckboxradio4" disabled>
+                                            <span class="checkbox-number__box--radio"></span>
+                                        </label>
+                                        <span class="checkboxe-number__titlle disable">3</span>
                                     </span>
                                 </div>
                             </div>
@@ -461,7 +514,7 @@
 
                                 <div class="switch-box">
                                     <label class="switch">
-                                        <input type="checkbox" class="switch__input" checked>
+                                        <input type="checkbox" class="switch__input" disabled>
                                         <span class="switch__slider switch__round"></span>
                                     </label>
                                     <span class="switch__paragraph">Disabled switch checkbox input</span>
@@ -469,7 +522,7 @@
 
                                 <div class="switch-box">
                                     <label class="switch">
-                                        <input type="checkbox" class="switch__input" checked>
+                                        <input type="checkbox" class="switch__input" disabled>
                                         <span class="switch__slider switch__round"></span>
                                     </label>
                                     <span class="switch__paragraph">Disabled checked switch checkbox input</span>
