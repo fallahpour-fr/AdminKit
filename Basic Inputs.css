@@ -1,53 +1,67 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-overflow-x: hidden;
-display: block;
-font-family: 'Roboto', sans-serif;
-letter-spacing: 1px;
+    overflow-x: hidden;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
 }
 
 body {
-font-size: 1.5em;
-/*24px*/
-display: block;
-word-wrap: break-word;
+    font-size: 1.5em;
+    /*24px*/
+    display: block;
+    word-wrap: break-word;
+    width: 100%;
 }
 
 .row {
-max-width: 1320px;
-margin: 0 auto;
+    max-width: 1270px;
+    margin: 0 auto;
 }
 
-:root{
-    --color-Navy-blue:#343a40;
-    --color-darkgray:#6c757d;
+.parent {
+    width: 100%;
+    display: flex;
+}
+
+:root {
+    --color-Navy-blue: #2b3846;
+    --color-darkgray: #6c757d;
     --color-gray: #ccc;
-    --color-white:#fff;
-    --color-blue:#3b7ddd;
-    --color-darkblue:#3b7ddd;
-    --color-dark:#212529;
-    --transition: 0.5s
+    --color-white: #fff;
+    --color-blue: #3b7ddd;
+    --color-darkblue: #3b7ddd;
+    --color-dark: #212529;
+    --color-blurgray: #f1f2f6;
+    --transition: 0.5s;
+    --border-radius: 0.3em;
+    --color-box-sizing: rgba(0, 82, 150, 0.24);
+    --border-color: #a8c5f0;
 }
 
 /*..................................................................side-navigation.................................................................*/
-.side-navigation{
-    background-color: var(--color-Navy-blue);
-    color: var(--color-darkgray);
+.wrapper-side {
     width: 260px;
-    font-size: 0.6em;
-    padding: 2em 0em;
 }
 
-.side-navigation__brand{
+.side-navigation {
+    width: 260px;
+    background-color: var(--color-Navy-blue);
+    color: var(--color-darkgray);
+    font-size: 0.6em;
+    padding: 2em 0em;
+
+}
+
+.side-navigation__brand {
     text-decoration: none;
     color: var(--color-white);
     font-size: 1.2em;
@@ -55,52 +69,52 @@ margin: 0 auto;
     padding-bottom: 1.5em;
 }
 
-.side-navigation__contant{
+.side-navigation__contant {
     list-style-type: none;
 }
 
-.side-navigation__header{
+.side-navigation__header {
     color: var(--color-gray);
     font-size: 0.8em;
     padding: 3em 0em 0.8em 1.7em;
 }
 
-.side-navigation__item{
-    padding: 0em  1.7em;
+.side-navigation__item {
+    padding: 0em 1.7em;
     cursor: pointer;
     transition: var(--transition);
     margin: 20px 0px;
-     display: block;
-     position: relative;
-}
-
-.side-navigation__item:hover{
-    color: var(--color-gray);
-}
-
-.side-navigation__item__contant{
+    display: block;
     position: relative;
 }
 
-.side-navigation__item__text{
+.side-navigation__item:hover {
+    color: var(--color-gray);
+}
+
+.side-navigation__item__contant {
+    position: relative;
+}
+
+.side-navigation__item__text {
     position: absolute;
     bottom: 5px;
     left: 40px;
     width: 100px;
-    
+
 }
 
-.side-navigation__item__icon{
+.side-navigation__item__icon {
     position: absolute;
     left: 220;
-    
+    font-size: 0.7em;
 }
 
-.side-navigation__item--pro{
+.side-navigation__item--pro {
     background-color: var(--color-blue);
     color: var(--color-white);
     font-size: 0.8em;
-    padding:0.1em 0.5em;
+    padding: 0.1em 0.5em;
     border-radius: 0.2em;
     text-align: center;
     position: absolute;
@@ -108,7 +122,7 @@ margin: 0 auto;
     top: 5px;
 }
 
-.side-navigation__item--button{
+.side-navigation__item--button {
     position: absolute;
     left: 210;
     font-size: 0.8em;
@@ -118,4 +132,213 @@ margin: 0 auto;
 }
 
 /*......................................................................................................*/
+.side-navigation__box {
+    font-size: 1em;
+    padding-top: 1em;
+}
 
+.side-navigation__box__content {
+    margin: 25px;
+    padding: 1.5em 1em;
+    background-color: #3b4b5c;
+    color: var(--color-white);
+    border-radius: 5%;
+}
+
+.side-navigation__box__content h3 {
+    font-size: 0.9em;
+}
+
+.side-navigation__box__content p {
+    font-size: 0.8em;
+    padding: 1.2em 0em;
+}
+
+.side-navigation__box__content button {
+    border: none;
+    background: none;
+    font-size: 1em;
+    color: var(--color-darkblue);
+    padding: 0.5em 3.8em;
+    border: 1px solid var(--color-darkblue);
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 5%;
+}
+
+.side-navigation__box__content button:hover {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+
+}
+
+/*..........................................................................navbar........................................................................*/
+.wrapper-contant {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-self: baseline;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    background-color: var(--color-white);
+}
+
+.navbar-search {
+    display: flex;
+}
+
+.navbar-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+}
+
+.navbar-country-img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.navbar-contant {
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-contant__item {
+    margin: 0px 9px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.navbar-contant__item__text {
+    font-size: 0.8em;
+    text-transform: capitalize;
+}
+
+.navbar-contant__item--icon:hover {
+    color: var(--color-darkblue);
+}
+
+.navbar-contant__item--bell {
+    position: relative;
+    font-size: 1em;
+}
+
+.navbar-contant__item--number {
+    position: absolute;
+    background-color: var(--color-darkblue);
+    color: var(--color-white);
+    left: 7;
+    bottom: 9;
+    text-align: center;
+    font-size: 0.65em;
+    padding: 0.2em 0.5em;
+    border-radius: 50%;
+}
+
+.navbar-contant__item--bell:hover .navbar-contant__item--number {
+    bottom: 12;
+}
+
+/*...........................................................................................*/
+.navbar-search {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search__form {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search__form__input {
+    border: none;
+    padding: 0.8em 1.5em;
+    padding-right: 1.5em;
+    background-color: var(--color-blurgray);
+    outline: none;
+}
+
+.navbar-search__form__button {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: var(--color-Navy-blue);
+    margin-left: -30px;
+}
+
+.navbar-search__icon {
+    margin-right: 17px;
+    color: var(--color-dark);
+}
+
+/*..............................................................................main.............................................................................*/
+
+.main {
+    background-color: aquamarine;
+    width: 100%;
+    font-size: 1em;
+    padding: 2em 1em;
+}
+
+.main-parent {
+    display: flex;
+    /* padding: 1em 0em; */
+}
+
+.main-contant {
+    width: 50%;
+    margin: 12px;
+    margin-top: 20px;
+    background-color: blueviolet;
+}
+
+.main-header {
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.main-box {
+    font-size: 0.7em;
+    background-color: var(--color-white);
+    color: var(--color-darkgray);
+    padding: 1em;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    /* display: block; */
+}
+
+.main__header {
+    padding-bottom: 2em;
+    text-transform: capitalize;
+}
+
+/*......................................................main-input.................................................*/
+.main-box__writespace {
+    outline: none;
+    border: 1px solid var(--color-gray);
+    width: 100%;
+    padding: 1em;
+    border-radius: var(--border-radius);
+    display: block;
+    appearance: none;
+    background-clip: padding-box;
+}
+
+
+.main-box__writespace:focus {
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 0 0.2em var(--color-box-sizing);
+}
+
+/*......................................................main-textarea.................................................*/
+.main-textarea {
+    font-size: 0.85em;
+}
+
+/*......................................................main-Checkboxes.................................................*/
