@@ -280,22 +280,20 @@ body {
 /*..............................................................................main.............................................................................*/
 
 .main {
-    background-color: aquamarine;
     width: 100%;
     font-size: 1em;
     padding: 2em 1em;
+    background-color: var(--color-blurgray);
 }
 
 .main-parent {
     display: flex;
-    /* padding: 1em 0em; */
 }
 
 .main-contant {
     width: 50%;
     margin: 12px;
     margin-top: 20px;
-    background-color: blueviolet;
 }
 
 .main-header {
@@ -322,7 +320,7 @@ body {
     outline: none;
     border: 1px solid var(--color-gray);
     width: 100%;
-    padding: 1em;
+    padding: 0.5em 1em;
     border-radius: var(--border-radius);
     display: block;
     appearance: none;
@@ -500,6 +498,34 @@ padding: 0.7em 1em;
     box-shadow: 0 0 0 0.2em var(--color-box-sizing);   
 }
 
+.switch__input:disabled+.switch__slider{
+    opacity: 0.5;
+} 
+
 .switch__input:checked+.switch__slider::before {
     transform: translate(17px);
+}
+
+/*..........................................................selecte.....................................................*/
+.select-list{
+    overflow-y: scroll;
+    color: var(--color-darkgray);
+    font-size: 0.9em;
+}
+.select-list li{
+   list-style-type: none;
+   font-size: 0.85em;
+   text-transform: capitalize;
+}
+/*..........................................................disable.....................................................*/
+.form-disable__text{
+    font-size: 0.85em;
+    margin-bottom: 9px;
+    opacity: 0.7;
+}
+/*..........................................................readonly....................................................*/
+.input-control:disabled ,
+.input-control:read-only{
+    color: var(--color-darkgray);
+    background-color: var(--color-blurgray);
 }

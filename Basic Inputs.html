@@ -436,19 +436,23 @@
 
                                 <div class="checkboxe">
                                     <label for="maincheckboxradio0" class="checkboxe-number__label">
-                                        <input class="checkbox-number__box--input" type="radio" name="radio" id="maincheckboxradio0" >
+                                        <input class="checkbox-number__box--input" type="radio" name="radio"
+                                            id="maincheckboxradio0">
                                         <span class="checkbox-number__box--radio"></span>
                                     </label>
-                                    <span class="checkboxe-number__titlle">Option one is this and that—be sure to include why it's
+                                    <span class="checkboxe-number__titlle">Option one is this and that—be sure to
+                                        include why it's
                                         great</span>
                                 </div>
 
                                 <div class="checkboxe">
                                     <label for="maincheckboxradio1" class="checkboxe-number__label">
-                                        <input class="checkbox-number__box--input" type="radio" name="radio" id="maincheckboxradio1" >
+                                        <input class="checkbox-number__box--input" type="radio" name="radio"
+                                            id="maincheckboxradio1">
                                         <span class="checkbox-number__box--radio"></span>
                                     </label>
-                                    <span class="checkboxe-number__titlle">Option two can be something else and selecting it will
+                                    <span class="checkboxe-number__titlle">Option two can be something else and
+                                        selecting it will
                                         deselect
                                         option
                                         one</span>
@@ -456,14 +460,15 @@
 
                                 <div class="checkboxe">
                                     <label for="maincheckboxradiosiable" class="checkboxe-number__label">
-                                        <input class="checkbox-number__box--input" type="radio" name="radio" id="maincheckboxradiosiable" disabled>
+                                        <input class="checkbox-number__box--input" type="radio" name="radio"
+                                            id="maincheckboxradiosiable" disabled>
                                         <span class="checkbox-number__box--radio"></span>
                                     </label>
                                     <span class="checkboxe-number__titlle disable">Option three is disabled</span>
                                 </div>
 
                                 <div class="main-radio__box">
-                            
+
                                     <span class="checkboxe-number">
                                         <label for="maincheckboxradio2" class="checkboxe-number__label">
                                             <input class="checkbox-number__box--input" type="radio" name="radio"
@@ -522,7 +527,8 @@
 
                                 <div class="switch-box">
                                     <label class="switch">
-                                        <input type="checkbox" class="switch__input" disabled>
+                                        <input type="checkbox" class="switch__input switch__input--disabled" checked
+                                            disabled>
                                         <span class="switch__slider switch__round"></span>
                                     </label>
                                     <span class="switch__paragraph">Disabled checked switch checkbox input</span>
@@ -533,47 +539,49 @@
                                 <p class="main__header">Selects</p>
 
                                 <div class="selects-tag">
-                                    <select>
+                                    <select class="select-list main-box__writespace margin-bottom">
                                         <option value="Open this select menu">Open this select menu</option>
                                         <option value="one">one</option>
                                         <option value="two">two</option>
                                         <option value="three">three</option>
                                     </select>
                                 </div>
-                                <ul class="select-list">
-                                    <li>Open this select menu</li>
-                                    <li>one</li>
-                                    <li>two</li>
-                                    <li>three</li>
-                                </ul>
+                                <select multiple class="select-list main-box__writespace ">
+                                    <option>Open this select menu</option>
+                                    <option>one</option>
+                                    <option>two</option>
+                                    <option>three</option>
+                                </select>
                             </div>
 
                             <div class="main-disable main-box">
                                 <p class="main__header">Disabled</p>
 
-                                <form class="form-disable form-disable__text">
-                                    <label for="disablepart">Disabled input</label>
-                                    <input id="disablepart" type="text" placeholder="Disabled input" disabled>
+                                <form class="form-disable ">
+                                    <div class="form-disable__text " for="disablepart">Disabled input</div>
+                                    <input class="main-box__writespace margin-bottom input-control" id="disablepart" type="text"
+                                        placeholder="Disabled input" disabled>
                                 </form>
 
                                 <form class="form-disable ">
-                                    <label for="disablepart">Disabled select menu</label>
-                                    <select class="form-disable__select" id="disablepart" class="form-disable__select"
-                                        disabled>
+                                    <div class="form-disable__text" for="disablepart">Disabled select menu</div>
+                                    <select class="main-box__writespace margin-bottom" id="disablepart" disabled>
                                         <option value="Disabled select">Disabled select</option>
-
-                                        <label for="disablecheckbox" value="checkbox" disabled>
-                                            <input type="checkbox" id="disablecheckbox" value="checkbox" disabled>
-                                            <span>Can't check this</span>
-                                        </label>
                                     </select>
+                                </form>
+
+                                <form class="form-disable ">
+                                    <label for="disablecheckbox" value="checkbox" disabled>
+                                        <input class="margin-bottom" type="checkbox" id="disablecheckbox" value="checkbox" disabled>
+                                        <span class="form-disable__text">Can't check this</span>
+                                    </label>
                                 </form>
                             </div>
 
                             <div class="main-readonly main-box">
                                 <p class="main__header">readonly</p>
                                 <form class="readonly__form">
-                                    <input class="input-control" type="text" placeholder="Readonly input"
+                                    <input class="main-box__writespace input-control" type="text" placeholder="Readonly input"
                                         value="Readonly input" readonly>
                                 </form>
 
