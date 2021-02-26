@@ -63,7 +63,22 @@ body {
     color: var(--color-darkgray);
     font-size: 0.6em;
     padding: 2em 0em;
-    overflow: hidden scroll;
+    overflow:hidden scroll;
+}
+
+.side-navigation::-webkit-scrollbar{
+    width: 8px;
+    min-height: 1px;    
+}
+
+.side-navigation::-webkit-scrollbar-thumb{
+    background-color: var(--color-darkgray);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.side-navigation:hover+.side-navigation::-webkit-scrollbar-thumb{
+    visibility: visible;
 }
 
 .side-navigation__brand {
@@ -465,6 +480,11 @@ padding: 0.7em 1em;
 }
 
 /*....................................................................switch...............................................................................*/
+
+.switch-box{
+    font-size: 0.8em;
+}
+
 .switch__input {
     opacity: 0;
 }
