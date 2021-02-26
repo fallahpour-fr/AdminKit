@@ -9,7 +9,7 @@
 
 html {
     overflow-x: hidden;
-    overflow-y: scroll;
+    
     display: block;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
@@ -234,6 +234,7 @@ body {
     margin: 0px 9px;
     cursor: pointer;
     transition: var(--transition);
+    color: var(--color-darkgray);
 }
 
 .navbar-contant__item__text {
@@ -295,6 +296,10 @@ body {
 .navbar-search__icon {
     margin-right: 17px;
     color: var(--color-dark);
+}
+
+.menu-setting{
+    display: none;
 }
 
 /*..............................................................................main.............................................................................*/

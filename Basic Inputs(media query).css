@@ -1,0 +1,48 @@
+@media only screen and (min-width:600px)and (max-width:982px) {
+
+    .fixe{
+        display: none;
+    }
+    .wrapper-side {
+        display: none;
+    }
+
+    .main-parent {
+        flex-direction: column;
+    }
+
+    .main-contant {
+        width: 98%;
+    }
+}
+
+@media only screen and (min-width:425px)and (max-width:600px) {
+    .fixe{
+        display: none;
+    }
+    .wrapper-side {
+        display: none;
+    }
+
+    .main-parent {
+        flex-direction: column;
+    }
+
+    .main-contant {
+        width: 98%;
+    }
+ 
+  .profile-img ,
+  .charies-hall ,
+  .navbar-search__form{
+      display: none;
+  }
+
+  .menu-setting{
+    display: block;
+}
+
+.footer{
+    font-size: 0.4em;
+}
+}
