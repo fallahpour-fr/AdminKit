@@ -63,7 +63,8 @@ body {
     color: var(--color-darkgray);
     font-size: 0.6em;
     padding: 2em 0em;
-    overflow:hidden scroll;
+    overflow:hidden;
+    transition: var(--transition);
 }
 
 .side-navigation::-webkit-scrollbar{
@@ -73,12 +74,11 @@ body {
 
 .side-navigation::-webkit-scrollbar-thumb{
     background-color: var(--color-darkgray);
-    border-radius: 5px;
-    visibility: hidden;
+    border-radius: 5px;    
 }
 
-.side-navigation:hover+.side-navigation::-webkit-scrollbar-thumb{
-    visibility: visible;
+.side-navigation:hover{
+    overflow-y: scroll;
 }
 
 .side-navigation__brand {
@@ -91,6 +91,8 @@ body {
 
 .side-navigation__contant {
     list-style-type: none;
+    text-transform: capitalize;
+    font-weight: 600;
 }
 
 .side-navigation__header {
